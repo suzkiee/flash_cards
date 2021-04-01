@@ -1,5 +1,3 @@
-
-
 class GameStart
   attr_reader :cards,
               :deck,
@@ -12,6 +10,7 @@ class GameStart
     card_4 = Card.new("What is another name for a mountain ash tree?", "Rowan", :Gardening)
     card_5 = Card.new("What country is Prague in?", "Czech Republic", :Geography)
     card_6 = Card.new("Who directed the Lord of the Rings trilogy?", "Peter Jackson", :Cinema)
+    #@cards = CardGenerator.new(filename)
     @cards  = [card_1, card_2, card_3, card_4, card_5, card_6]
     @deck   = Deck.new(cards)
     @round  = Round.new(deck)
